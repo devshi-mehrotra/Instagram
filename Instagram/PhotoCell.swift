@@ -1,5 +1,5 @@
 //
-//  PhotoCellCollectionViewCell.swift
+//  PhotoCell.swift
 //  Instagram
 //
 //  Created by Devshi Mehrotra on 6/21/16.
@@ -8,7 +8,10 @@
 
 import UIKit
 
-class PhotoCellCollectionViewCell: UICollectionViewCell {
+class PhotoCell: UICollectionViewCell {
     @IBOutlet weak var colorLabel: UILabel!
+    @IBOutlet weak var photoImageView: UIImageView!
+    
+    
     
 }

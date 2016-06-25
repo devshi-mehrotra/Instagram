@@ -10,6 +10,11 @@ import UIKit
 
 class LikeCell: UITableViewCell {
 
+    
+    @IBOutlet weak var profPicView: UIImageView!
+    @IBOutlet weak var usernameLabel: UILabel!
+    
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
