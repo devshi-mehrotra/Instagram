@@ -1,8 +1,8 @@
 # Project 3 - *Parstegram*
 
-**Name of your app** is a photo sharing app using Parse as its backend.
+**Parstegram** is a photo sharing app using Parse as its backend.
 
-Time spent: **35** hours spent in total
+Time spent: **X** hours spent in total
 
 ## User Stories
 
@@ -47,7 +47,9 @@ Please list two areas of the assignment you'd like to **discuss further with you
 
 Here's a walkthrough of implemented user stories:
 
-<img src='http://i.imgur.com/KCLXEaU.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+<img src='' title='Video Walkthrough' width='' alt='Video Walkthrough' />
+
+GIF can be viewed here: http://i.imgur.com/KCLXEaU.gifv
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
