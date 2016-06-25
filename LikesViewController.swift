@@ -42,9 +42,6 @@ class LikesViewController: UIViewController, UITableViewDataSource, UITableViewD
         cell.usernameLabel.text = likeList[indexPath.row]
         
         let likeListFull = post!["likedUsersFull"] as! [PFUser]
-        //let user = likeListFull[indexPath.row]
-        //let profpic = user["profilePic"] as! PFFile
-        //print(profpic.url)
         let tempimage = likeListFull[indexPath.row]["profilePic"]
         tempimage.getDataInBackgroundWithBlock {
             (imageData: NSData?, error: NSError?) -> Void in

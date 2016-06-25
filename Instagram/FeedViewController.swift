@@ -69,6 +69,8 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         query.limit = 20
         query.includeKey("author")
         query.includeKey("_created_at")
+        query.includeKey("commentUsers")
+        //query.includeKey("comments")
         query.includeKey("likedUsersFull")
         // fetch data asynchronously
         query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
@@ -309,6 +311,8 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         query.limit = 20 * queryLimitCounter
         query.includeKey("author")
         query.includeKey("likedUsersFull")
+        query.includeKey("commentUsers")
+        //query.includeKey("comments")
         query.orderByDescending("createdAt")
         // fetch data asynchronously
         query.findObjectsInBackgroundWithBlock { (posts: [PFObject]?, error: NSError?) -> Void in
@@ -400,6 +404,9 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
         performSegueWithIdentifier("feedToLikeSegue", sender: sender)
     }
 
+    @IBAction func clickComment(sender: AnyObject) {
+        performSegueWithIdentifier("feedToCommentSegue", sender: sender)
+    }
     
     
     // MARK: - Navigation
@@ -434,6 +441,16 @@ class FeedViewController: UIViewController, UITableViewDataSource, UITableViewDe
             
             let likeViewController = segue.destinationViewController as! LikesViewController
             likeViewController.post = post
+        }
+        
+        else if(segue.identifier == "feedToCommentSegue") {
+            let cell = sender!.superview!!.superview as! PostCell
+            //let cell = sender as! UITableViewCell
+            let indexPath = tableView.indexPathForCell(cell)
+            let post = myposts![indexPath!.section]
+            
+            let commentViewController = segue.destinationViewController as! CommentViewController
+            commentViewController.post = post
         }
         
         else {

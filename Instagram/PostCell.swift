@@ -12,13 +12,14 @@ import Parse
 class PostCell: UITableViewCell {
 
     //@IBOutlet weak var authorLabel: UILabel!
-    @IBOutlet weak var commentsCountLabel: UILabel!
+    //@IBOutlet weak var commentsCountLabel: UILabel!
     @IBOutlet weak var likesCountLabel: UILabel!
     @IBOutlet weak var captionLabel: UILabel!
     @IBOutlet weak var photoView: UIImageView!
     @IBOutlet weak var heartImageView: UIImageView!
     @IBOutlet weak var usernameButton: UIButton!
     
+    @IBOutlet weak var commentsCountLabel: UILabel!
     
     var user: PFUser?
     

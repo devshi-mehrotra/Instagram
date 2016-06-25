@@ -30,6 +30,8 @@ class Post: NSObject {
         post["profilePic"] = getPFFileFromImage(profPic)
         post["likedUsers"] = []
         post["likedUsersFull"] = []
+        post["commentUsers"] = []
+        post["comments"] = []
         
         // Save object (following function will save the object in Parse asynchronously)
         post.saveInBackgroundWithBlock(completion)

@@ -24,6 +24,8 @@
 		50441D871D1B55D6008CE585 /* UserPhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50441D861D1B55D6008CE585 /* UserPhotoViewController.swift */; };
 		50C9428E1D1DDDD300889146 /* LikesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9428D1D1DDDD300889146 /* LikesViewController.swift */; };
 		50C942901D1DE2A400889146 /* LikeCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C9428F1D1DE2A400889146 /* LikeCell.swift */; };
+		50C942941D1E083B00889146 /* CommentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C942931D1E083B00889146 /* CommentViewController.swift */; };
+		50C942961D1E126B00889146 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50C942951D1E126B00889146 /* CommentCell.swift */; };
 		51981C74F24D01A8BC1A1824 /* Pods_Instagram.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EF33252970F6FD20492BC689 /* Pods_Instagram.framework */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +49,8 @@
 		50441D861D1B55D6008CE585 /* UserPhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UserPhotoViewController.swift; path = ../Pods/UserPhotoViewController.swift; sourceTree = "<group>"; };
 		50C9428D1D1DDDD300889146 /* LikesViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikesViewController.swift; sourceTree = "<group>"; };
 		50C9428F1D1DE2A400889146 /* LikeCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeCell.swift; sourceTree = "<group>"; };
+		50C942931D1E083B00889146 /* CommentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentViewController.swift; sourceTree = "<group>"; };
+		50C942951D1E126B00889146 /* CommentCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
 		73EEE5F620F2F1F52B120B5B /* Pods-Instagram.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.debug.xcconfig"; sourceTree = "<group>"; };
 		C3CE37653E7176A768F86C53 /* Pods-Instagram.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Instagram.release.xcconfig"; path = "Pods/Target Support Files/Pods-Instagram/Pods-Instagram.release.xcconfig"; sourceTree = "<group>"; };
 		EF33252970F6FD20492BC689 /* Pods_Instagram.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Instagram.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -76,6 +80,7 @@
 		50441D251D188CF2008CE585 = {
 			isa = PBXGroup;
 			children = (
+				50C942951D1E126B00889146 /* CommentCell.swift */,
 				50C9428F1D1DE2A400889146 /* LikeCell.swift */,
 				50C9428D1D1DDDD300889146 /* LikesViewController.swift */,
 				50441D491D191256008CE585 /* Post.swift */,
@@ -112,6 +117,7 @@
 				50441D7C1D1A6C4D008CE585 /* UserPostsViewController.swift */,
 				50441D7E1D1A6CDB008CE585 /* PhotoCell.swift */,
 				50441D861D1B55D6008CE585 /* UserPhotoViewController.swift */,
+				50C942931D1E083B00889146 /* CommentViewController.swift */,
 			);
 			path = Instagram;
 			sourceTree = "<group>";
@@ -260,6 +266,7 @@
 				50441D771D1A41AC008CE585 /* InfiniteScrollActivityView.swift in Sources */,
 				50441D751D19ED48008CE585 /* PostCell.swift in Sources */,
 				50441D441D189365008CE585 /* LoginViewController.swift in Sources */,
+				50C942941D1E083B00889146 /* CommentViewController.swift in Sources */,
 				50C9428E1D1DDDD300889146 /* LikesViewController.swift in Sources */,
 				50441D481D18A9D3008CE585 /* CameraViewController.swift in Sources */,
 				50441D341D188CF2008CE585 /* ViewController.swift in Sources */,
@@ -269,6 +276,7 @@
 				50441D721D19DEB9008CE585 /* FeedViewController.swift in Sources */,
 				50441D871D1B55D6008CE585 /* UserPhotoViewController.swift in Sources */,
 				50441D4A1D191256008CE585 /* Post.swift in Sources */,
+				50C942961D1E126B00889146 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
